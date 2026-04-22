@@ -124,7 +124,7 @@ export default function DetailingBusinessWebsite() {
                 <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-950 p-6">
                   <div className="flex h-full flex-col justify-between">
                     <div className="inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-sm text-neutral-200">
-                      <Car className="h-4 w-4" /> Apex Detailing
+                      <Car className="h-4 w-4" /> Elite Auto Detailing
                     </div>
                     <div>
                       <p className="text-3xl font-black">Clean. Glossy. Ready.</p>
