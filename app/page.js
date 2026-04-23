@@ -15,7 +15,7 @@ import {
 
 export default function DetailingBusinessWebsite() {
   const business = {
-    name: "Elite Auto Detailing",
+    name: "Elite Auto Detailng",
     tagline:
       "Professional interior and exterior car detailing that makes your vehicle look brand new.",
     phoneDisplay: "(973) 464-5222",
