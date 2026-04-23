@@ -21,8 +21,8 @@ export default function DetailingBusinessWebsite() {
     phoneDisplay: "(973) 464-5222",
     phoneLink: "9734645222",
     serviceArea: "Montclair, NJ & Surrounding areas",
-    instagram: "(N/A)",
-    instagramLink: "https://instagram.com/apexdetailing",
+    instagram: "Elite Detailing Of New Jersey Instagram",
+    instagramLink: "https://www.instagram.com/elitedetailingofnj/",
   };
 
   const services = [
