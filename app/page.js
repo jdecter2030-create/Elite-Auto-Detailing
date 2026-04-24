@@ -263,7 +263,7 @@ export default function DetailingBusinessWebsite() {
                   value={form.notes}
                   onChange={(e) => handleChange("notes", e.target.value)}
                   className="min-h-[120px] w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-neutral-500 outline-none"
-                  placeholder="Anything I should know about your car?"
+                  placeholder="Anything we should know about your car?"
                 />
 
                 <Button
