@@ -151,7 +151,7 @@ export default function DetailingBusinessWebsite() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
+      <section></section> className="mx-auto max-w-6xl px-6 py-16"
         <div className="mb-10 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400">
             Services
@@ -161,61 +161,71 @@ export default function DetailingBusinessWebsite() {
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-[2fr_1fr]">
-          {services.map((service) => (
-            <Card
-              key={service.title}
-              className="rounded-3xl border-white/10 bg-white/5 text-white"
-            >
-              <CardContent className="p-8">
-                <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold">{service.title}</h3>
-                    <p className="mt-2 max-w-2xl text-neutral-300">
-                      {service.description}
-                    </p>
-                  </div>
-                  <div className="rounded-2xl bg-white px-5 py-3 text-center text-black">
-                    <p className="text-sm font-medium uppercase tracking-wide">
-                      Starting at
-                    </p>
-                    <p className="text-3xl font-black">{service.price}</p>
-                  </div>
-                </div>
+<div className="grid gap-6 md:grid-cols-[2fr_1fr]">
 
-                <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                  {service.includes.map((item) => (
-                    <div
-                      key={item}
-                      className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/20 p-3 text-neutral-200"
-                    >
-                      <CheckCircle2 className="h-5 w-5" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+  {/* SERVICES COLUMN */}
+  <div className="flex flex-col gap-6">
+    {services.map((service) => (
+      <Card
+        key={service.title}
+        className="rounded-3xl border-white/10 bg-white/5 text-white"
+      >
+        <CardContent className="p-8">
 
-          <Card className="rounded-3xl border-white/10 bg-white/5 text-white">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold">Add-Ons</h3>
-              <div className="mt-6 space-y-4">
-                {addons.map((addon) => (
-                  <div
-                    key={addon.name}
-                    className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 p-4"
-                  >
-                    <span className="font-medium">{addon.name}</span>
-                    <span className="text-lg font-bold">{addon.price}</span>
-                  </div>
-                ))}
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 className="text-2xl font-bold">{service.title}</h3>
+              <p className="mt-2 max-w-2xl text-neutral-300">
+                {service.description}
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white px-5 py-3 text-center text-black">
+              <p className="text-sm font-medium uppercase tracking-wide">
+                Starting at
+              </p>
+              <p className="text-3xl font-black">{service.price}</p>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {service.includes.map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/20 p-3 text-neutral-200"
+              >
+                <CheckCircle2 className="h-5 w-5" />
+                <span>{item}</span>
               </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+            ))}
+          </div>
+
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+
+  {/* ADD-ONS COLUMN */}
+  <Card className="rounded-3xl border-white/10 bg-white/5 text-white h-fit">
+    <CardContent className="p-8">
+      <h3 className="text-2xl font-bold">Add-Ons</h3>
+
+      <div className="mt-6 space-y-4">
+        {addons.map((addon) => (
+          <div
+            key={addon.name}
+            className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/20 p-4"
+          >
+            <span className="font-medium">{addon.name}</span>
+            <span className="text-lg font-bold">{addon.price}</span>
+          </div>
+        ))}
+      </div>
+
+    </CardContent>
+  </Card>
+
+</div>
 
       <section className="border-y border-white/10 bg-white/[0.03]">
         <div className="mx-auto max-w-6xl px-6 py-16">
